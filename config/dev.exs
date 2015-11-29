@@ -12,14 +12,15 @@ config :market, Market.Endpoint,
   code_reloader: true,
   cache_static_lookup: false,
   check_origin: false,
-  watchers: [{Path.expand("webpack.devserver.js"), []}]
+  watchers: []
   # watchers: [node: ["node_modules/brunch/bin/brunch", "watch", "--stdin"]]
+  # NOTE Original watchers, but disable because we are not using brunch
 
 # Watch static and templates for browser reloading.
 config :market, Market.Endpoint,
   live_reload: [
     patterns: [
-      # ~r{priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$},
+      ~r{priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$},
       ~r{web/views/.*(ex)$},
       ~r{web/templates/.*(eex)$}
     ]
