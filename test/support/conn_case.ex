@@ -1,4 +1,4 @@
-defmodule Taipeihack2015.ConnCase do
+defmodule Market.ConnCase do
   @moduledoc """
   This module defines the test case to be used by
   tests that require setting up a connection.
@@ -20,20 +20,20 @@ defmodule Taipeihack2015.ConnCase do
       # Import conveniences for testing with connections
       use Phoenix.ConnTest
 
-      alias Taipeihack2015.Repo
+      alias Market.Repo
       import Ecto.Model
       import Ecto.Query, only: [from: 2]
 
-      import Taipeihack2015.Router.Helpers
+      import Market.Router.Helpers
 
       # The default endpoint for testing
-      @endpoint Taipeihack2015.Endpoint
+      @endpoint Market.Endpoint
     end
   end
 
   setup tags do
     unless tags[:async] do
-      Ecto.Adapters.SQL.restart_test_transaction(Taipeihack2015.Repo, [])
+      Ecto.Adapters.SQL.restart_test_transaction(Market.Repo, [])
     end
 
     :ok

@@ -1,3 +1,3 @@
-defmodule Taipeihack2015.PageViewTest do
-  use Taipeihack2015.ConnCase, async: true
+defmodule Market.PageViewTest do
+  use Market.ConnCase, async: true
 end

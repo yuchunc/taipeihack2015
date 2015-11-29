@@ -1,4 +1,4 @@
-defmodule Taipeihack2015.ChannelCase do
+defmodule Market.ChannelCase do
   @moduledoc """
   This module defines the test case to be used by
   channel tests.
@@ -20,19 +20,19 @@ defmodule Taipeihack2015.ChannelCase do
       # Import conveniences for testing with channels
       use Phoenix.ChannelTest
 
-      alias Taipeihack2015.Repo
+      alias Market.Repo
       import Ecto.Model
       import Ecto.Query, only: [from: 2]
 
 
       # The default endpoint for testing
-      @endpoint Taipeihack2015.Endpoint
+      @endpoint Market.Endpoint
     end
   end
 
   setup tags do
     unless tags[:async] do
-      Ecto.Adapters.SQL.restart_test_transaction(Taipeihack2015.Repo, [])
+      Ecto.Adapters.SQL.restart_test_transaction(Market.Repo, [])
     end
 
     :ok

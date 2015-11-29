@@ -1,5 +1,5 @@
-defmodule Taipeihack2015.PageControllerTest do
-  use Taipeihack2015.ConnCase
+defmodule Market.PageControllerTest do
+  use Market.ConnCase
 
   test "GET /" do
     conn = get conn(), "/"

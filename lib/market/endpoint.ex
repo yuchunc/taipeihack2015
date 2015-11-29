@@ -1,14 +1,14 @@
-defmodule Taipeihack2015.Endpoint do
-  use Phoenix.Endpoint, otp_app: :taipeihack2015
+defmodule Market.Endpoint do
+  use Phoenix.Endpoint, otp_app: :market
 
-  socket "/socket", Taipeihack2015.UserSocket
+  socket "/socket", Market.UserSocket
 
   # Serve at "/" the static files from "priv/static" directory.
   #
   # You should set gzip to true if you are running phoenix.digest
   # when deploying your static files in production.
   plug Plug.Static,
-    at: "/", from: :taipeihack2015, gzip: false,
+    at: "/", from: :market, gzip: false,
     only: ~w(css fonts images js favicon.ico robots.txt)
 
   # Code reloading can be explicitly enabled under the
@@ -32,8 +32,8 @@ defmodule Taipeihack2015.Endpoint do
 
   plug Plug.Session,
     store: :cookie,
-    key: "_taipeihack2015_key",
+    key: "_market_key",
     signing_salt: "bqPd5POC"
 
-  plug Taipeihack2015.Router
+  plug Market.Router
 end

@@ -1,5 +1,5 @@
-defmodule Taipeihack2015.Router do
-  use Taipeihack2015.Web, :router
+defmodule Market.Router do
+  use Market.Web, :router
 
   pipeline :browser do
     plug :accepts, ["html"]
@@ -13,14 +13,14 @@ defmodule Taipeihack2015.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/", Taipeihack2015 do
+  scope "/", Market do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
   end
 
   # Other scopes may use custom stacks.
-  # scope "/api", Taipeihack2015 do
+  # scope "/api", Market do
   #   pipe_through :api
   # end
 end

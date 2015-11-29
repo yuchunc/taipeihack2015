@@ -1,3 +1,3 @@
-defmodule Taipeihack2015.LayoutView do
-  use Taipeihack2015.Web, :view
+defmodule Market.LayoutView do
+  use Market.Web, :view
 end

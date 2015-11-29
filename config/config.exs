@@ -6,12 +6,12 @@
 use Mix.Config
 
 # Configures the endpoint
-config :taipeihack2015, Taipeihack2015.Endpoint,
+config :market, Market.Endpoint,
   url: [host: "localhost"],
   root: Path.dirname(__DIR__),
   secret_key_base: "3yI7xhH+HobsfAXumKcBT6sYjj/qLX6UXKkh4Ew7yTAYjEiFzTOQ8KFKL1kWlZio",
   render_errors: [accepts: ~w(html json)],
-  pubsub: [name: Taipeihack2015.PubSub,
+  pubsub: [name: Market.PubSub,
            adapter: Phoenix.PubSub.PG2]
 
 # Configures Elixir's Logger

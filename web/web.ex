@@ -1,12 +1,12 @@
-defmodule Taipeihack2015.Web do
+defmodule Market.Web do
   @moduledoc """
   A module that keeps using definitions for controllers,
   views and so on.
 
   This can be used in your application as:
 
-      use Taipeihack2015.Web, :controller
-      use Taipeihack2015.Web, :view
+      use Market.Web, :controller
+      use Market.Web, :view
 
   The definitions below will be executed for every view,
   controller, etc, so keep them short and clean, focused
@@ -29,11 +29,11 @@ defmodule Taipeihack2015.Web do
     quote do
       use Phoenix.Controller
 
-      alias Taipeihack2015.Repo
+      alias Market.Repo
       import Ecto.Model
       import Ecto.Query, only: [from: 1, from: 2]
 
-      import Taipeihack2015.Router.Helpers
+      import Market.Router.Helpers
     end
   end
 
@@ -47,7 +47,7 @@ defmodule Taipeihack2015.Web do
       # Use all HTML functionality (forms, tags, etc)
       use Phoenix.HTML
 
-      import Taipeihack2015.Router.Helpers
+      import Market.Router.Helpers
     end
   end
 
@@ -61,7 +61,7 @@ defmodule Taipeihack2015.Web do
     quote do
       use Phoenix.Channel
 
-      alias Taipeihack2015.Repo
+      alias Market.Repo
       import Ecto.Model
       import Ecto.Query, only: [from: 1, from: 2]
     end

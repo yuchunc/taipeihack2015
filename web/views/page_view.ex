@@ -1,3 +1,3 @@
-defmodule Taipeihack2015.PageView do
-  use Taipeihack2015.Web, :view
+defmodule Market.PageView do
+  use Market.Web, :view
 end

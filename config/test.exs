@@ -2,7 +2,7 @@ use Mix.Config
 
 # We don't run a server during test. If one is required,
 # you can enable the server option below.
-config :taipeihack2015, Taipeihack2015.Endpoint,
+config :market, Market.Endpoint,
   http: [port: 4001],
   server: false
 
@@ -10,10 +10,10 @@ config :taipeihack2015, Taipeihack2015.Endpoint,
 config :logger, level: :warn
 
 # Configure your database
-config :taipeihack2015, Taipeihack2015.Repo,
+config :market, Market.Repo,
   adapter: Ecto.Adapters.Postgres,
   username: "postgres",
   password: "postgres",
-  database: "taipeihack2015_test",
+  database: "market_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox

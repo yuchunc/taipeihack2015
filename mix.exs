@@ -1,8 +1,8 @@
-defmodule Taipeihack2015.Mixfile do
+defmodule Market.Mixfile do
   use Mix.Project
 
   def project do
-    [app: :taipeihack2015,
+    [app: :market,
      version: "0.0.1",
      elixir: "~> 1.0",
      elixirc_paths: elixirc_paths(Mix.env),
@@ -17,7 +17,7 @@ defmodule Taipeihack2015.Mixfile do
   #
   # Type `mix help compile.app` for more information.
   def application do
-    [mod: {Taipeihack2015, []},
+    [mod: {Market, []},
      applications: [:phoenix, :phoenix_html, :cowboy, :logger,
                     :phoenix_ecto, :postgrex]]
   end

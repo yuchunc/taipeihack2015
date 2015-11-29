@@ -1,5 +1,5 @@
-defmodule Taipeihack2015.ErrorView do
-  use Taipeihack2015.Web, :view
+defmodule Market.ErrorView do
+  use Market.Web, :view
 
   def render("404.html", _assigns) do
     "Page not found"

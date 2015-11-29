@@ -1,4 +1,4 @@
-defmodule Taipeihack2015.ModelCase do
+defmodule Market.ModelCase do
   @moduledoc """
   This module defines the test case to be used by
   model tests.
@@ -16,16 +16,16 @@ defmodule Taipeihack2015.ModelCase do
 
   using do
     quote do
-      alias Taipeihack2015.Repo
+      alias Market.Repo
       import Ecto.Model
       import Ecto.Query, only: [from: 2]
-      import Taipeihack2015.ModelCase
+      import Market.ModelCase
     end
   end
 
   setup tags do
     unless tags[:async] do
-      Ecto.Adapters.SQL.restart_test_transaction(Taipeihack2015.Repo, [])
+      Ecto.Adapters.SQL.restart_test_transaction(Market.Repo, [])
     end
 
     :ok

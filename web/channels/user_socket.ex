@@ -1,8 +1,8 @@
-defmodule Taipeihack2015.UserSocket do
+defmodule Market.UserSocket do
   use Phoenix.Socket
 
   ## Channels
-  # channel "rooms:*", Taipeihack2015.RoomChannel
+  # channel "rooms:*", Market.RoomChannel
 
   ## Transports
   transport :websocket, Phoenix.Transports.WebSocket
@@ -30,7 +30,7 @@ defmodule Taipeihack2015.UserSocket do
   # Would allow you to broadcast a "disconnect" event and terminate
   # all active sockets and channels for a given user:
   #
-  #     Taipeihack2015.Endpoint.broadcast("users_socket:" <> user.id, "disconnect", %{})
+  #     Market.Endpoint.broadcast("users_socket:" <> user.id, "disconnect", %{})
   #
   # Returning `nil` makes this socket anonymous.
   def id(_socket), do: nil
