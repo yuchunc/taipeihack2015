@@ -23,8 +23,9 @@ Ready to run in production? Please [check our deployment guides](http://www.phoe
   * `npm install`
 
 ## Integration following these:
-http://10consulting.com/2015/11/18/phoenix-react-redux-example/
-https://github.com/slashdotdash/phoenix-react-redux-example
+
+[Phoenix, React, Redux example](http://10consulting.com/2015/11/18/phoenix-react-redux-example/)
+[github](https://github.com/slashdotdash/phoenix-react-redux-example)
 
 ## Debugging
 

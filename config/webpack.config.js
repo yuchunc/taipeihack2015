@@ -20,7 +20,7 @@ var plugins = [
 // This is necessary to get the sass @import's working
 var stylePathResolves = (
   'includePaths[]=' + path.resolve('./') + '&' +
-    'includePaths[]=' + path.resolve('./node_modules')
+  'includePaths[]=' + path.resolve('./node_modules')
 );
 
 if (prod) {
@@ -47,7 +47,7 @@ module.exports = {
       {
         test: /\.jsx?$/,
         exclude: /node_modules/,
-        loaders: loaders
+        loaders: loaders,
         query: {
           presets: ['es2015', 'react']
         }
