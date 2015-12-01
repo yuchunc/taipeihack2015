@@ -11,7 +11,7 @@ var plugins = [
   new ExtractTextPlugin('app.css'),
   new CopyWebpackPlugin([
     { from: './web/static/assets' },
-    { from: '/deps/phoenix_html/web/static/js/phoenix_html.js',
+    { from: './deps/phoenix_html/web/static/js/phoenix_html.js',
       to: 'js/phoenix_html.js'
     }
   ])
@@ -36,7 +36,6 @@ module.exports = {
   output: {
     path: path.join(__dirname, './priv/static/js'),
     filename: 'bundle.js',
-    // publicPath: publicPath
   },
   plugins: plugins,
   resolve: {
@@ -47,7 +46,7 @@ module.exports = {
       {
         test: /\.jsx?$/,
         exclude: /node_modules/,
-        loaders: loaders,
+        loader: loaders,
         query: {
           presets: ['es2015', 'react']
         }
