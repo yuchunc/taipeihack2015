@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react'
+import { render } from 'react-dom'
 import { connect } from 'react-redux'
 // import stuff from '../actions'
 // import stuff from '../components/*'
@@ -8,9 +9,13 @@ class App extends Component {
   // componentDidMount() {}
 
   render() {
-
-    return (
-      <div>Hello Phoenix!</div>
+    return(
+      <h1>Hello Phoenix!</h1>
     )
   }
 }
+
+render(
+  <App />,
+  document.getElementById('root')
+)

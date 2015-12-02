@@ -1,4 +1,4 @@
 import { configureChannel } from './channel';
 
 let socket = configureChannel();
-let channel = socket.channel("*");
+//let channel = socket.channel("market");

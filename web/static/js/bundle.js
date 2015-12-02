@@ -6,7 +6,9 @@ import { compose, createStore, applyMiddleware } from 'redux'
 import { Provider } from 'react-redux'
 import { devTools, persistState } from 'redux-devtools'
 import { DevTools, DebugPanel, LogMonitor } from 'redux-devtools/lib/react'
-//import App from './containers/App'
+
+import App from './containers/App'
+import marketApp from './reducers'
 
 const loggerMiddleware = createLogger();
 
@@ -18,13 +20,15 @@ const createStoreWithMiddleware = compose(
   devTools()
 )(createStore);
 
+const store = createStoreWithMiddleware(marketApp)
+
 render(
   <div>
-    <Provider>
+    <Provider store={store}>
       <App />
     </Provider>
     <DebugPanel top right bottom>
-      <DevTools monitor={Log<onitor} />
+      <DevTools store={store} monitor={LogMonitor} />
     </DebugPanel>
   </div>,
   document.getElementById('root')

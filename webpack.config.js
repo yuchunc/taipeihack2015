@@ -28,19 +28,23 @@ if (prod) {
 }
 
 var loaders = ['babel']
-var publicPath = 'http://localhost:4001/'
 
 module.exports = {
   entry: entry,
+
   devtool: prod ? null : 'eval-sourcemaps',
+
   output: {
     path: path.join(__dirname, './priv/static/js'),
     filename: 'bundle.js',
   },
-  plugins: plugins,
+
   resolve: {
-    alias: { phoenix: __dirname + "/deps/phoenix/web/static/js/phoenix.js"}
+    alias: {
+      phoenix: __dirname + '/deps/phoenix/web/static/js/phoenix.js'
+    }
   },
+
   module: {
     loaders: [
       {
@@ -59,5 +63,7 @@ module.exports = {
         )
       }
     ]
-  }
+  },
+
+  plugins: plugins
 }
