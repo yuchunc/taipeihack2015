@@ -12,7 +12,7 @@ config :market, Market.Endpoint,
   code_reloader: true,
   cache_static_lookup: false,
   check_origin: false,
-  watchers: []
+  watchers: [node: ["node_modules/webpack/bin/webpack.js", "--watch", "--color"]]
   # watchers: [node: ["node_modules/brunch/bin/brunch", "watch", "--stdin"]]
   # NOTE Original watchers, but disable because we are not using brunch
 

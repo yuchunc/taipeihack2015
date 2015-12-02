@@ -40,9 +40,11 @@ module.exports = {
   },
 
   resolve: {
+    root: path.resolve(__dirname),
     alias: {
-      phoenix: __dirname + '/deps/phoenix/web/static/js/phoenix.js'
-    }
+      phoenix: 'deps/phoenix/web/static/js/phoenix'
+    },
+    extensions: ['', '.js', '.jsx']
   },
 
   module: {

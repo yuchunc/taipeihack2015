@@ -4,9 +4,6 @@
     "url": "git+https://github.com/yuchunc/taipeihack2015"
   },
   "license": "MIT",
-  "scripts": {
-    "start": "webpack --watch --colors"
-  },
   "dependencies": {
     "history": "^1.13.1",
     "react": "^0.14.3",
