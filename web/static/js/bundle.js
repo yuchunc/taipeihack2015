@@ -21,7 +21,7 @@ const createStoreWithMiddleware = compose(
 render(
   <div>
     <Provider>
-      //<App />
+      <App />
     </Provider>
     <DebugPanel top right bottom>
       <DevTools monitor={Log<onitor} />
