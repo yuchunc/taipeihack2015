@@ -21,6 +21,8 @@ Ready to run in production? Please [check our deployment guides](http://www.phoe
 ## Remember to install Webpack and existing npm dependencies
   * `npm install -g webpack webpack-dev-server`
   * `npm install`
+  * There is currently a bug with dep/phoenix/web/static/js/phoenix.js
+      * Change line 456-458 `channel` to `channelInstance`
   * `webpack --watch --color`
 
 ## Integration following these:

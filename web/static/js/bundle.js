@@ -20,16 +20,23 @@ const createStoreWithMiddleware = compose(
   devTools()
 )(createStore);
 
-const store = createStoreWithMiddleware(marketApp)
+//const store = createStoreWithMiddleware(marketApp)
+
+const store = createStore(() => {})
+
+//render(
+  //<div>
+    //<Provider store={store}>
+      //<App />
+    //</Provider>
+    //<DebugPanel top right bottom>
+      //<DevTools store={store} monitor={LogMonitor} />
+    //</DebugPanel>
+  //</div>,
+  //document.getElementById('root')
+//)
 
 render(
-  <div>
-    <Provider store={store}>
-      <App />
-    </Provider>
-    <DebugPanel top right bottom>
-      <DevTools store={store} monitor={LogMonitor} />
-    </DebugPanel>
-  </div>,
+  <App />,
   document.getElementById('root')
 )
