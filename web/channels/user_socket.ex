@@ -3,6 +3,7 @@ defmodule Market.UserSocket do
 
   ## Channels
   # channel "rooms:*", Market.RoomChannel
+  channel "markets", Market.MarketChannel
 
   ## Transports
   transport :websocket, Phoenix.Transports.WebSocket
