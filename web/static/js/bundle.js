@@ -20,9 +20,8 @@ const createStoreWithMiddleware = compose(
   devTools()
 )(createStore);
 
-//const store = createStoreWithMiddleware(marketApp)
-
-const store = createStore(() => {})
+// const store = createStoreWithMiddleware(marketApp)
+const store = createStore(() => {});
 
 //render(
   //<div>
