@@ -1,3 +1,5 @@
+# THIS IS DEAD, left here for future reference sake
+
 # Taipeihack2015 - Project Market
 
 To start your Phoenix app:

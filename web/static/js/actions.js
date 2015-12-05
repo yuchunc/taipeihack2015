@@ -1,4 +1,4 @@
-import { configureChannel } from './channel';
+// import { configureChannel } from './channel';
+//let channelInstance = socket.channel("markets:lobby");
 
 let socket = configureChannel();
-let channelInstance = socket.channel("markets:lobby");
